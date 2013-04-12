@@ -1,0 +1,40 @@
+arp.rb
+
+Function runspoof
+
+caught = false
+while caught = false
+	Send constructed target packet to interface
+	Send constructed router packet to interface
+end
+
+Function dnsspoof
+
+Capture udp packets on port 53 and from target IP
+
+if Query Request 
+	generate payload
+	send spoofed response to target
+
+Function getDomainName
+
+while true
+	grab length of section of domain name
+	print characters and add a "."
+
+dnsspoof.rb
+
+construct target packet
+construct routers packet
+enable port forwarding
+
+Function Main
+create new arp thread
+create new dns thread
+
+join threads
+
+rescue interrupts
+kill threads
+disable port forwarding
+exit
